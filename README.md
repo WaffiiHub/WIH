@@ -1,11 +1,8 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img style="height: 100px" alt="Gatsby" src="./src/images/waffiihub-logo.png" />
   </a>
 </p>
-<h1 align="center">
-Warri Innovation Hub
-</h1>
 
 
