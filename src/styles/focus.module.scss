@@ -1,0 +1,83 @@
+$color-primary-light: rgb(54, 98, 173);
+.container {
+}
+
+.header {
+  text-align: center;
+  margin: 4rem;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.main-section {
+  background-color: #f6f5f7;
+  padding: 3rem 2rem 4rem 2rem;
+}
+
+.main-section-header {
+  padding: 2rem;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.main-section-header::after {
+  content: "";
+  display: block;
+  width: 5%;
+  padding-top: 1rem;
+  border-bottom: 2px solid #1f1f1f;
+  transition: 0.5s;
+}
+
+.main-section-header:hover::after {
+  width: 40%;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  grid-gap: 3rem;
+}
+
+.card {
+  max-width: 28rem;
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  transition: transform .3s;
+}
+
+.card:hover {
+  transform: translateY(-1.4rem) scale(1.03);
+}
+
+.card-icon {
+  background-color: $color-primary-light;
+  border-radius: 50%;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.focus-area {
+  margin-top: 1rem;
+}
+.focus-icon {
+  font-size: 4rem;
+  color: #fff;
+}
+.focus-header {
+  font-size: 2rem;
+}
+
+.focus-text {
+  font-size: 1.5rem;
+  padding: 0 1rem 1rem 1rem;
+  color: #777373;
+}

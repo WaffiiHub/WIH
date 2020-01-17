@@ -1,31 +1,29 @@
+
 import React from "react"
 import PropTypes from "prop-types"
 
 import Header from "./header"
 import Navigation from "./navigation"
-import Logo from "../images/waffiihub-logo.png"
+import Logo from "../images/waffiihub-logo-white.png"
 import "../styles/global.scss"
-import layoutStyles from "./layout.module.scss"
-import Footer from "./footer"
+import layoutStyles from "./indexLayout.module.scss"
 
-const Layout = ({ children }) => {
+const IndexLayout = ({ children }) => {
   return (
     <>
       <div className={layoutStyles.container}>
         <Navigation />
-        <Header Logo={Logo} color="#1f1f1f" />
+        <Header Logo={Logo} />
         <div>
           <main>{children}</main>
         </div>
-
-        <Footer />
       </div>
     </>
   )
 }
 
-Layout.propTypes = {
+IndexLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default IndexLayout;

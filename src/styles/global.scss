@@ -1,14 +1,16 @@
-
+$primary-color: rgb(41, 87, 164);
 
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 article,
 aside,
@@ -187,7 +189,9 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  // font-size: 70%; /*This defines what 1rem is --- the same as 10px;*/
+  // font: 70% georgia, serif;
+  font: 70% "Rubik bold", sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -202,7 +206,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  // font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

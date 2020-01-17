@@ -1,0 +1,15 @@
+.container {
+  height: 100%;
+  padding: 2rem;
+  background: linear-gradient(rgba(41, 87, 164, 0.6), rgba(44, 89, 167, 0.3)),
+    url(../images/team-strategize.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: .8rem;
+    background-position: center;
+
+  }
+}

@@ -1,0 +1,171 @@
+$color-white: #fff;
+$color-black: #000;
+
+$color-primary: rgb(41, 87, 164);
+$color-primary-light: rgb(54, 98, 173);
+$color-primary-dark: rgb(26, 79, 170);
+
+$color-dark-grey-3: #333;
+
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+  &__button {
+    display: none;
+    background-color: $color-white;
+    height: 4.5rem;
+    width: 4.5rem;
+    position: fixed;
+    top: 2.8rem;
+    right: 2.8rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    text-align: center;
+    cursor: pointer;
+  }
+  &__background {
+    display: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 3.1rem;
+    right: 3.1rem;
+    background-image: radial-gradient(
+      $color-primary-light,
+      $color-primary-dark
+    );
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  &__nav {
+    // min-height: 100vh;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    opacity: 0; // Opacity and width set to zero hides the nav
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &__contact {
+    padding-top: 5rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  &__item {
+    margin: 1rem;
+  }
+  &__item a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      color: $color-white;
+      text-decoration: none;
+      // text-transform: uppercase;
+      background-image: linear-gradient(
+        118deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%
+      );
+      background-size: 250%;
+      transition: all 0.4s;
+    }
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+      transform: translateX(1rem);
+    }
+  }
+  //FUNCTIONALITY
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
+  }
+
+  //ICON
+
+  &__icon {
+    position: relative;
+    margin-top: 2.1rem;
+    &,
+    &::before,
+    &::after {
+      width: 2.4rem;
+      height: 3px;
+      background-color: $color-dark-grey-3;
+      display: inline-block;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+    &::before {
+      top: -0.7rem;
+    }
+
+    &::after {
+      top: 0.7rem;
+    }
+  }
+
+  //HOVER EFFECT ON THE MENU BUTTON
+  &__button:hover &__icon::before {
+    top: -0.9rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 0.9rem;
+  }
+
+  //MAKE A CROSS WHEN MENU BUTTON IS CLICK USING CHECKBOX HACK
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent; //HIDES THE MIDDLE BAR OF THE ICON...using width or height will affect the after and before pseudo-elements
+  }
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .navigation {
+    &__button,
+    &__background {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation__item a:link,
+  .navigation__item a:visited {
+    font-size: 1.6rem;
+  }
+}

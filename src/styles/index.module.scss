@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main-section {
+  max-width: 60rem;
+  height: 85vh;
+  margin-bottom: 0;
+  margin-left: 2rem;
+}
+
+.header-text {
+  font-size: 3.8rem;
+  padding: 8rem 0 0 5rem;
+  margin-top: 5rem;
+  color: #ffffff;
+}
+
+.contact-section {
+  padding-top: 13rem;
+  margin-right: 4rem;
+}
+
+@media only screen and (max-width: 880px) {
+  .header-text {
+    font-size: 3rem;
+    padding: 4rem 0 0 0rem;
+  }
+  .contact-section {
+    display: none;
+  }
+}
+
+@media only screen and (max-widh: 600px) {
+  .header-text {
+    font-size: 2.8rem;
+    font-weight: normal;
+    padding: 3rem 3rem 0 0rem;
+  }
+  .main-section {
+    height: 100vh;
+  }
+}
