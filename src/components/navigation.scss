@@ -74,7 +74,6 @@ $color-dark-grey-3: #333;
       padding: 1rem 2rem;
       color: $color-white;
       text-decoration: none;
-      // text-transform: uppercase;
       background-image: linear-gradient(
         118deg,
         transparent 0%,
@@ -167,5 +166,17 @@ $color-dark-grey-3: #333;
   .navigation__item a:link,
   .navigation__item a:visited {
     font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .navigation__list {
+    margin-top: 0rem;
+  }
+
+  .navigation__contact {
+    padding-top: 0rem;
+    padding: 0 1rem;
+    margin: 0 auto;
   }
 }
+

@@ -2,7 +2,8 @@ $color-black: #1f1f1f;
 
 .contact-details {
   margin: 3rem auto 3rem auto;
-  width: 25rem;
+  max-width: 25rem;
+  min-height: 20rem;
   max-height: 45rem;
   background: #fff;
   box-shadow: 0 2rem 3rem rgba($color-black, 0.8);
@@ -43,9 +44,3 @@ $color-black: #1f1f1f;
     float: left;
   }
 }
-
-// @media only screen and (max-width) {
-//   .contact-details {
-//     margin: 10rem auto 3rem auto;
-//   }
-// }

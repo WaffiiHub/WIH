@@ -41,6 +41,7 @@ $color-primary-light: rgb(54, 98, 173);
 
 .card {
   max-width: 28rem;
+  min-width: 25rem;
   background-color: #fff;
   display: flex;
   text-align: center;
@@ -50,8 +51,8 @@ $color-primary-light: rgb(54, 98, 173);
   margin: 0 auto;
   padding: 2rem;
   border-radius: 4px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  transition: transform .3s;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
 }
 
 .card:hover {
@@ -80,4 +81,16 @@ $color-primary-light: rgb(54, 98, 173);
   font-size: 1.5rem;
   padding: 0 1rem 1rem 1rem;
   color: #777373;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    margin: 3rem auto;
+    font-size: 2.6rem;
+  }
+
+  .card {
+    max-width: 23rem;
+    // min-width: 23rem;
+  }
 }
