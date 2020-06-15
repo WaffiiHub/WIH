@@ -1,9 +1,11 @@
 .container {
-  height: 100%;
+  height: 100vh;
   padding: 2rem;
   background: linear-gradient(rgba(41, 87, 164, 0.3), rgba(44, 89, 167, 0.3)),
-    url(../images/warri.jpg) no-repeat fixed;
+    url(https://res.cloudinary.com/waffiihub/image/upload/v1580212117/warri_xbtdxy.jpg)
+      no-repeat fixed;
   background-size: cover;
+  overflow: auto;
 }
 
 @media only screen and (max-width: 600px) {

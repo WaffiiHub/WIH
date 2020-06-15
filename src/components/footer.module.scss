@@ -11,7 +11,7 @@ $color-primary-dark: rgb(26, 79, 170);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 3rem;
+  padding: 3rem 3rem 0rem;
 }
 .quick-links {
   min-width: 20rem;
@@ -30,7 +30,7 @@ $color-primary-dark: rgb(26, 79, 170);
   font-size: 1.4rem;
 }
 .quick-item {
-    padding: .8rem;
+  padding: 0.8rem;
 }
 
 .quick-item::after {
@@ -48,7 +48,7 @@ $color-primary-dark: rgb(26, 79, 170);
 }
 
 .contact-details {
-  padding: 3rem;
+  padding: 3rem 3rem 0rem;
   margin: 1rem;
 }
 .foot {
@@ -73,4 +73,26 @@ $color-primary-dark: rgb(26, 79, 170);
 .copyright {
   color: #ffffff;
   font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-section {
+    padding: 0;
+  }
+
+  .quick-links {
+    margin-top: 2.5rem;
+  }
+
+  .contact-details {
+    padding: 0;
+  }
+
+  .footer-img {
+    height: 3.5rem;
+  }
+  .copyright {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
 }

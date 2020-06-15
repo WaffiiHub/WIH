@@ -1,0 +1,129 @@
+.container {
+  text-align: center;
+}
+
+.blog-header h1 {
+  font-size: 3.5rem;
+  animation: moveInRight 1s ease-in-out 0s;
+}
+.blog-posts-container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 1.6rem;
+}
+
+.blog-post {
+  text-align: left;
+  max-width: 37rem;
+  padding: 1rem;
+  transition: transform 0.3s;
+  animation: moveInBottom 1s ease-out 0s;
+
+  .blog-tag {
+    color: #df1995;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  h2 {
+    color: #000000;
+    font-size: 1.9rem;
+  }
+
+  h2::first-letter {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: #777777;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1a4faa;
+  }
+}
+
+.blog-post:hover {
+  transform: translateY(-1.1rem) scale(1.01);
+  background-color: #eeeeee;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-posts-container {
+    grid-template-columns: none;
+    padding: 1.6rem 0rem 2rem;
+  }
+  .blog-post {
+    margin: 0 auto;
+    max-width: 35rem;
+    .blog-tag {
+      font-size: 0.9rem;
+    }
+  }
+
+  .blog-header h1 {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .blog-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .blog-post {
+    .blog-tag {
+      font-size: 0.8rem;
+    }
+    h2 {
+      color: #000000;
+      font-size: 1.6rem;
+    }
+
+    h2::first-letter {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+    }
+
+    span {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #1a4faa;
+    }
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  60% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

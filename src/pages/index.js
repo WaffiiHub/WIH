@@ -3,7 +3,7 @@ import React from "react"
 import IndexLayout from "../components/indexLayout"
 import SEO from "../components/seo"
 import ContactDetail from "../components/contactDetail"
-import IndexStyle from "../styles/index.module.scss"
+import IndexStyle from "./index.module.scss"
 
 const IndexPage = () => (
   <IndexLayout>

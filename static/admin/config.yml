@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  repo: sink-opuba/WIH
+
+media_folder: static/assets
+public_folder: ../static/assets
+site_url: https://warriinnovationhub.com
+display_url: https://warriinnovationhub.com
+logo_url: https://res.cloudinary.com/waffiihub/image/upload/v1579554011/waffiihub-text-logo_qn3f3p.png
+
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: "Publish Date", widget: datetime }
+      - { name: title, label: Title }
+      - { name: description, label: Description, widget: "text" }
+      - { name: tag, label: "Tag (insight or news)", widget: "text" }
+      - { name: "featuredimage", label: "Featured Image", widget: image }
+      - { name: body, label: Body, widget: markdown }
+      - { name: author, label: "Author's Name" }
+      - { name: "authorrole", label: "Author's Role" }
+      - {
+          name: "authorimage",
+          label: "Author's Image",
+          widget: image,
+          default: "assets/author_avatar.png",
+          required: false,
+        }

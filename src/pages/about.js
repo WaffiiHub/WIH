@@ -1,9 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
-import AboutStyle from "../styles/about.module.scss"
+import AboutStyle from "./about.module.scss"
 import SEO from "../components/seo"
-
-import { clara, audreyFunny } from "../images/team"
 
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa"
 
@@ -24,17 +22,17 @@ const SecondPage = () => (
       <section className={AboutStyle.teamSection}>
         <h2>Meet the Team</h2>
         <div className={AboutStyle.teamContainer}>
-          <div className={AboutStyle.teamMember}>
+          <div className={AboutStyle.teamMember} id="paul">
             <figure className={AboutStyle.teamShape}>
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771891/waffiihubteam/teamPics/paul_t28qni.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209576/team/paul_vr2zod.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771829/waffiihubteam/teamPics/paulFunny_ykoogi.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209588/team/paulFunny_wqgwyn.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -56,11 +54,7 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-            <div
-              className={
-                AboutStyle.teamMemberDetails + " " + AboutStyle.textColor
-              }
-            >
+            <div className={AboutStyle.teamMemberDetails}>
               <h3>Paul Okoro</h3>
               <h4>Founder/CEO</h4>
             </div>
@@ -71,12 +65,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771945/waffiihubteam/teamPics/tim_do2tmv.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209588/team/tim_okopno.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771929/waffiihubteam/teamPics/timFunny_wzcw0g.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209585/team/timFunny_mczhti.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -109,12 +103,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771918/waffiihubteam/teamPics/sink_e3yqlw.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581791542/team/sink_bmmpha.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771885/waffiihubteam/teamPics/sinkFunny_ntklis.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209580/team/sink_t8amhs.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -147,12 +141,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771603/waffiihubteam/teamPics/audrey_ujqkup.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209545/team/audrey_butnxa.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771562/waffiihubteam/teamPics/audreyFunny_ozmwmv.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209543/team/audreyFunny_uuchht.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -185,12 +179,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771757/waffiihubteam/teamPics/newton_fybker.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209577/team/newton_gd6fcn.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771765/waffiihubteam/teamPics/newtonFunny_wowech.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209607/team/newtonFunny_mhhmmc.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -213,9 +207,8 @@ const SecondPage = () => (
               </figcaption>
             </figure>
             <div
-              className={
-                AboutStyle.teamMemberDetails + " " + AboutStyle.textColor
-              }
+              style={{ color: "#7c7777" }}
+              className={AboutStyle.teamMemberDetails}
             >
               <h3>Newton Ewhrudjakpor</h3>
               <h4>COO</h4>
@@ -227,12 +220,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771693/waffiihubteam/teamPics/austin_r6qkkq.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209540/team/austin_xek1yh.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771646/waffiihubteam/teamPics/austinFunny_jithxj.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209534/team/austinFunny_uj5hky.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -265,12 +258,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579769785/waffiihubteam/teamPics/funny_cajz8f.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209569/team/mavino_nt3tww.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579769770/waffiihubteam/teamPics/marvinoFunny_cfcxnj.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209571/team/mavinoFunny_vwhw6j.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -303,18 +296,18 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src={audreyFunny}
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106803/team/amaju_jjggxr.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src={audreyFunny}
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106805/team/amajuFunny_rdilxv.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
-                  href="#linkedin"
+                  href="https://twitter.com/amatwits"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -322,7 +315,7 @@ const SecondPage = () => (
                 </a>
                 <a
                   className={AboutStyle.lnColor}
-                  href="#linkedin"
+                  href="https://www.linkedin.com/in/amajuoritse-ashon-76679330"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -341,18 +334,55 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771799/waffiihubteam/teamPics/okoro_qowyth.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106807/team/jamin_rzsqqp.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771816/waffiihubteam/teamPics/okoroFunny_jxg0zf.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106804/team/jaminFunny_eyg1zk.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
                 <a
                   className={AboutStyle.twColor}
-                  href="https://twitter.com/audrey_mukoro"
+                  href="https://twitter.com/codekyd"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter />
+                </a>
+                <a
+                  className={AboutStyle.lnColor}
+                  href="https://www.linkedin.com/in/trust-jamin-2365b6147/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </figcaption>
+            </figure>
+            <div className={AboutStyle.teamMemberDetails}>
+              <h3>Jamin Okpukoro</h3>
+              <h4>Web Dev Lead</h4>
+            </div>
+          </div>
+
+          <div className={AboutStyle.teamMember}>
+            <figure className={AboutStyle.teamShape}>
+              <img
+                className={AboutStyle.teamImg + " " + AboutStyle.img}
+                alt=""
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209570/team/okoro_alem7o.jpg"
+              />
+              <img
+                className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
+                alt=""
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209578/team/okoroFunny_crvgfj.jpg"
+              />
+
+              <figcaption className={AboutStyle.teamSocials}>
+                <a
+                  className={AboutStyle.twColor}
+                  href="#twitter"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -379,12 +409,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771804/waffiihubteam/teamPics/efiri_rdyciq.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209556/team/efiri_mq0ep3.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579769644/waffiihubteam/teamPics/efiriFunny_jxx8vs.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209547/team/efiriFunny_h1sbah.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -406,8 +436,9 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
+
             <div className={AboutStyle.teamMemberDetails}>
-              <h3>Dr Tamaradeinyefa Efiri</h3>
+              <h3 className={AboutStyle.pl}>Tamaradeinyefa Efiri</h3>
               <h4>Social Impact Lead</h4>
             </div>
           </div>
@@ -417,12 +448,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src={audreyFunny}
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106801/team/marvis_ynlo5d.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src={audreyFunny}
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1581106802/team/marvisFunny_kslutp.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -445,7 +476,7 @@ const SecondPage = () => (
               </figcaption>
             </figure>
             <div className={AboutStyle.teamMemberDetails}>
-              <h3>Marvis Ofure</h3>
+              <h3>Marvis Ighedosa</h3>
               <h4>Design Lead</h4>
             </div>
           </div>
@@ -455,12 +486,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579769684/waffiihubteam/teamPics/floraFunny_r16efc.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209556/team/floraFunny_tn7ybe.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579769674/waffiihubteam/teamPics/flora_bytovk.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209561/team/flora_ypw2dc.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -493,12 +524,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771761/waffiihubteam/teamPics/mercy_gvgfal.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209568/team/mercy_dpvgyw.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771816/waffiihubteam/teamPics/mercyFunny_t4wuzt.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209567/team/mercyFunny_nzwg6f.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -521,7 +552,7 @@ const SecondPage = () => (
               </figcaption>
             </figure>
             <div className={AboutStyle.teamMemberDetails}>
-              <h3>Mercy</h3>
+              <h3>Mercy Oyebade</h3>
               <h4>Media Associate</h4>
             </div>
           </div>
@@ -531,12 +562,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src={clara}
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209541/team/clara_xnrpmr.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579769515/waffiihubteam/teamPics/claraFunny_v8xp9p.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209550/team/claraFunny_ja0wdp.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -559,7 +590,7 @@ const SecondPage = () => (
               </figcaption>
             </figure>
             <div className={AboutStyle.teamMemberDetails}>
-              <h3>Clara Akpovwovwo</h3>
+              <h3 className={AboutStyle.pl}>Clara Akpovwovwo</h3>
               <h4>Customer Relations</h4>
             </div>
           </div>
@@ -568,12 +599,12 @@ const SecondPage = () => (
               <img
                 className={AboutStyle.teamImg + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771625/waffiihubteam/teamPics/ajiri_krhbkl.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209542/team/ajiri_sgyhvz.jpg"
               />
               <img
                 className={AboutStyle.teamImgFunny + " " + AboutStyle.img}
                 alt=""
-                src="https://res.cloudinary.com/waffiihub/image/upload/v1579771573/waffiihubteam/teamPics/ajiriFunny_pcscmd.jpg"
+                src="https://res.cloudinary.com/waffiihub/image/upload/v1580209546/team/ajiriFunny_c048i5.jpg"
               />
 
               <figcaption className={AboutStyle.teamSocials}>
@@ -595,11 +626,7 @@ const SecondPage = () => (
                 </a>
               </figcaption>
             </figure>
-            <div
-              className={
-                AboutStyle.teamMemberDetails + " " + AboutStyle.textColor
-              }
-            >
+            <div className={AboutStyle.teamMemberDetails}>
               <h3>Ajiri Onaemo</h3>
               <h4>Sales Associate</h4>
             </div>

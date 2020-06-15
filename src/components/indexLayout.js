@@ -5,7 +5,6 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import Navigation from "./navigation"
 import Logo from "../images/waffiihub-logo-white.png"
-import "../styles/global.scss"
 import layoutStyles from "./indexLayout.module.scss"
 
 const IndexLayout = ({ children }) => {

@@ -180,3 +180,35 @@ $color-dark-grey-3: #333;
   }
 }
 
+@media only screen and (max-width: 485px) {
+  .navigation__button {
+    top: 1.8rem;
+    right:2rem;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .navigation__background {
+    top: 1.8rem;
+    right: 2rem;
+  }
+  .navigation__icon {
+    margin-top: 1.4rem;
+  }
+  .navigation__icon::before {
+    top: -0.6rem;
+  }
+
+  .navigation__icon::after {
+    top: 0.6rem;
+  }
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+    width: 1.8rem;
+  }
+
+  .navigation__item {
+    margin: 0;
+  }
+}

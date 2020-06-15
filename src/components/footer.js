@@ -31,7 +31,8 @@ const Footer = () => (
     <div className={FooterStyle.foot}>
       <img alt="waffiihub logo white" src={Logo} />
       <p className={FooterStyle.copyright}>
-        copyright &copy; waffiihub 2020. All rights reserved.
+        copyright &copy; waffiihub {new Date().getFullYear()}. All rights
+        reserved.
       </p>
     </div>
   </footer>
